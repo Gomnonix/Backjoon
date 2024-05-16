@@ -1,14 +1,7 @@
-nums = int(input())
-sits = input()
+n = int(input())
+a = input()
 
-sits_s = sits.count('S')
-sits_l = sits.count('LL')
-
-cups = 0
-if sits_l > 0:
-    cups += sits_s + (sits_l + 1) 
-    print(cups)
-    
+if "LL" not in a:
+    print(a.count("S"))
 else:
-    cups += sits_s
-    print(cups)
+    print(a.count("S")+a.count("LL")+1)
