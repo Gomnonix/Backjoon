@@ -1,10 +1,11 @@
-import sys
+import sys 
+# 표준입출력: 더 빨리 입력을 받는다
 
 n = int(sys.stdin.readline())
 array = []
 
 for _ in range(n):
-    cmd = sys.stdin.readline().strip().split()
+    cmd = sys.stdin.readline().split()
 
     if cmd[0] == "push":
         array.append(int(cmd[1]))
